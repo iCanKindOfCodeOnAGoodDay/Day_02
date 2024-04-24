@@ -48,7 +48,9 @@ def main():
     
     tip_contribution = ( total * ( percent / 100 ) ) / people # calculate
     
-    print( f'Each person should tip: ${tip_contribution}' )
+    rounded_tip = round( tip_contribution, 2 ) # 2 decimals only 
+    
+    print( f'Each person should tip: ${rounded_tip}' )
     
 # close 
     
